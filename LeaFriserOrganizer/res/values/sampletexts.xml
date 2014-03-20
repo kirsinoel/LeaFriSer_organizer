@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sampletexts">
+        <item>item_1</item>
+        <item>item_2</item>
+        <item>item_3</item>
+        <item>item_4</item>
+        <item>item_5</item>
+    </string-array>
+</resources>

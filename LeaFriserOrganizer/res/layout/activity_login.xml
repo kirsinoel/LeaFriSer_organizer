@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3399FF" >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center" >
+ 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="500dp" >
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginbutton"
+        android:layout_alignLeft="@+id/loginbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/pw"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/fpbutton"
+        android:layout_alignBottom="@+id/fpbutton"
+        android:layout_toRightOf="@+id/password"
+        android:background="@drawable/yellow_buttonstate"
+        android:onClick="registerClicked"
+        android:text="@string/register" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_alignLeft="@+id/loginbutton"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/usn" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/lfs_pic" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/registerbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:onClick="loginClicked"
+        android:text="@string/log" 
+        android:background="@drawable/yellow_buttonstate"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:src="@drawable/org_pic" />
+
+    <Button
+        android:id="@+id/fpbutton"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/yellow_buttonstate"
+        android:onClick="forgotClicked"
+        android:text="@string/forgotpass" />
+
+</RelativeLayout>
+</LinearLayout>
+
+
+    
+</ScrollView>

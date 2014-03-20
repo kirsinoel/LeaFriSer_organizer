@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"         
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:inputType="textCapWords"
+            android:maxLength="50"
+            android:ems="10" />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+		<TextView
+		    android:id="@+id/height"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Category"
+		    android:textColor="#000000"
+		    android:textSize="20sp" />
+
+         <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="170dp"
+            android:layout_height="50dp" 
+            android:entries="@array/cat_arrays"
+            android:prompt="@string/cat_prompt"/>
+   </LinearLayout> 
+
+     
+   	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+   	    <TextView
+            android:id="@+id/date"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_gravity="bottom"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+   	    
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:ems="10"
+            />
+        
+        <Button
+		    android:id="@+id/cal"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:layout_marginTop="10dp"
+		    android:background="@drawable/calendar_ic"
+		    android:onClick="calendarpick"
+		   />
+        
+    </LinearLayout>   
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Time"
+            android:layout_gravity="bottom"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:ems="10"
+            />
+
+        <Button
+            android:id="@+id/clock"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+             android:layout_gravity="bottom"
+            android:background="@drawable/time"
+            android:onClick="timepick" />
+    </LinearLayout>
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_margin="10dp">
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Place"
+		    android:layout_marginTop="10dp"
+		    android:textColor="#000000"
+		    android:textSize="20sp" />
+
+		<EditText
+		    android:id="@+id/place"
+		    android:layout_width="160dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:textSize="15sp" />
+
+		
+        
+	    </LinearLayout>
+	    
+	 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        </LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+
+	    <EditText
+	        android:id="@+id/desc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="80dp"
+	        android:layout_weight="0.29"
+	        android:ems="10"
+	        android:hint="Add description" >
+	    </EditText>
+	</LinearLayout>
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+		
+		<Button
+		    android:id="@+id/button1"
+		    android:layout_width="80dp"
+		    android:layout_height="40dp"
+		    android:layout_marginRight="20dp"
+		    android:background="@drawable/blue_buttonstate"
+		    android:onClick="addClicked"
+		    android:text="Save"/>
+		<Button
+		    android:id="@+id/button2"
+		    android:layout_width="80dp"
+		    android:layout_height="40dp"
+		    android:background="@drawable/blue_buttonstate"
+		    android:onClick="cancelClicked"
+		    android:layout_marginLeft="10dp"
+		    android:text="Cancel" />
+	</LinearLayout>
+	
+	
+	</LinearLayout>
+</ScrollView>

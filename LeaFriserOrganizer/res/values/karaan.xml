@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="karaan">
+        <item>Study</item>
+        <item>River Trek</item>
+        <item>Mountain Climbing</item>
+        <item>Beach Party</item>
+        <item>Ziplining</item>
+        <item>Wall Climbing</item>
+        <item>Strolling</item>
+        <item>Kayaking</item>
+        <item>Sleeping</item>
+        <item>Out of town</item>
+    </string-array>
+    
+    
+    
+     <string-array name="leadership">
+        <item>Alpha Day</item>
+        <item>Rover Scouting</item>
+        <item>SVAR Collegiate Congress</item>
+        <item>NEB</item>
+    </string-array>
+    
+     
+      <string-array name="friendship">
+        <item>Phi Day</item>
+        <item>River Trek</item>
+        <item>Beach Party</item>
+        <item>Alcoy Sem-ender</item>
+    </string-array>
+    
+      
+      <string-array name="service">
+        <item>Omega Day</item>
+        <item>Gasa sa gugma community outreach</item>
+        <item>Missionaries of the Poor</item>
+        <item>Distribution of Relief Goods</item>
+    </string-array>
+    
+       <string-array name="others">
+        <item>Kaon</item>
+        <item>Basa</item>
+        <item>Matug</item>
+        <item>Maligo</item>
+    </string-array>
+</resources>

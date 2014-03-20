@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="500dp" >
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/home"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/history_icon" 
+        android:onClick="historyClicked"/>
+
+    <Button
+        android:id="@+id/myevents"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/mycalendar"
+        android:layout_alignTop="@+id/history"
+        android:background="@drawable/notepad_icon"
+        android:onClick="eventsClicked" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/home"
+        android:layout_marginRight="14dp"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/settings"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/logout_icon" 
+        android:onClick="logoutClicked"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignRight="@+id/logout"
+        android:text="Log out" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/history"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/settings_icon"
+        android:onClick="settingsClicked" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/history"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/home_icon"
+        android:onClick="homeClicked" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/settings"
+        android:text="Settings" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/myevents"
+        android:layout_below="@+id/myevents"
+        android:text="My Events" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="History" />
+
+    <Button
+        android:id="@+id/mycalendar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/history"
+        android:layout_alignLeft="@+id/logout"
+        android:background="@drawable/calendar_icon"
+        android:onClick="calendarClicked" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/mycalendar"
+        android:layout_below="@+id/mycalendar"
+        android:text="My Calendar" />
+
+</RelativeLayout>
+
+</ScrollView>

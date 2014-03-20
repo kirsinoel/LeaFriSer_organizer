@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LFS Organizer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="pw">Password</string>
+    <string name="usn">Username</string>
+    <string name="forgotpass">Forgot Password?</string>
+    <string name="log">Log In</string>
+    <string name="register">Register</string>
+    <string name="question">Who is your ultimate crush?</string>
+    <string name="valmsg">Validation if correct or wrong</string>
+    
+    <string name="title_section3">Service</string>
+    <string name="title_section2">Friendship</string>
+    <string name="title_section1">Leadership</string>
+    
+    <string name="time">2:30</string>
+    <string name="description">Event with brothers and sisters from Zeta Omega and Alpha Beta</string>
+    <string name="place">same place</string>
+     <string name="date">03-02-2014</string>
+     <string name="st">Study</string>
+       <string name="rt">River Trek</string>
+        <string name="mc">Mountain Climbing</string>
+      <string name="bp">Beach Party</string>
+         <string name="zg">Ziplining</string>
+       <string name="wc">Wall Climbing</string>
+        <string name="sg">Strolling</string>
+       <string name="kg">Kayaking</string>
+       <string name="sl">Sleeping</string>
+        <string name="ot">Out of town</string>
+    
+    <string-array name="Event_titles">
+        <item>android</item>
+        <item>google</item>
+        <item>apple</item>
+        <item>yahoo</item>
+        <item>gree</item>
+        <item>mixi</item>
+    </string-array>
+    
+     <string-array name="Event_links">
+        <item>http://www.android.com/</item>
+        <item>http://www.google.com/</item>
+        <item>http://www.apple.com/</item>
+        <item>http://www.yahoo.com/</item>
+        <item>http://gree.jp/</item>
+        <item>http://mixi.jp/</item>
+    </string-array>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >My Events</item>
+        <item >My Calendar</item>
+        <item >History</item>
+        <item >Settings</item>
+        <item >Log Out</item>
+    </string-array>
+   
+    
+    <string name="cat_prompt">Choose a category</string>
+
+    <string-array name="cat_arrays">
+        <item>Leadership</item>
+        <item>Friendship</item>
+        <item>Service</item>
+        <item>Others</item>
+    </string-array>
+    
+    
+   
+
+</resources>

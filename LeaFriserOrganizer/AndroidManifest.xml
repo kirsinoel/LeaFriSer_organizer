@@ -1,0 +1,158 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.leafriserorganizer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+     
+
+        <activity
+            android:name="info.leafriser.organizer.LaunchActivity"
+             android:theme="@android:style/Theme.Light.NoTitleBar" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name="info.leafriser.organizer.MainActivity"
+            android:label="@string/app_name" 
+            >
+         </activity>
+         
+        
+        <!-- Login Page -->
+         <activity
+            android:name="info.leafriser.organizer.LoginActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+             >
+         </activity>
+         
+          <activity
+            android:name="info.leafriser.organizer.HomeActivity"
+            
+             >
+         </activity>
+         
+          <!-- Register Activity -->
+        <activity
+            android:name="info.leafriser.organizer.RegisterActivity"
+            android:label="@string/app_name"
+             >
+         </activity>
+         
+         <!-- History -->
+          <activity
+            android:name="info.leafriser.organizer.HistoryActivity"
+            android:label="@string/app_name">
+         </activity>
+         
+         <!-- Forgot Password Activity -->
+        <activity
+            android:name="info.leafriser.organizer.ForgotPasswordActivity"
+             android:theme="@android:style/Theme.Light.NoTitleBar"
+           >
+         </activity>
+         
+        <!-- My events -->
+        <activity
+            android:name="info.leafriser.organizer.MyEventsActivity"
+             android:label="My Events"
+           >
+         </activity>
+         
+        
+         <!-- Create new event -->
+          <activity
+            android:name="info.leafriser.organizer.AddEventActivity"
+            android:label="Create new event">
+         </activity>
+         
+           <!-- Leadership -->
+        <activity
+            android:name="info.leafriser.organizer.Leadership"
+            android:label="Leadership"
+             >
+         </activity>
+               
+         
+          <!-- Friendship -->
+        <activity
+            android:name="info.leafriser.organizer.Friendship"
+            android:label="Friendship"
+             >
+         </activity>
+         
+            <!-- Service -->
+        <activity
+            android:name="info.leafriser.organizer.ServiceEvent"
+            android:label="Service"
+             >
+         </activity>
+         
+           <!-- Others -->
+        <activity
+            android:name="info.leafriser.organizer.Others"
+            android:label="Others"
+             >
+         </activity>
+        
+        <!-- EventViewer -->
+        <activity android:name="info.leafriser.organizer.EventView"
+            android:theme="@style/AppTheme"
+            android:label="Event Details"
+            />
+        
+        
+         <activity android:name="info.leafriser.organizer.CalendarActivity"
+             android:label="My Calendar"
+                 >
+            
+        </activity>
+        
+         
+         <!-- Settings -->
+          <activity android:name="info.leafriser.organizer.SettingsActivity"
+                    android:label="Settings"  >
+           </activity>
+         
+          <!-- Change Security -->
+          <activity android:name="info.leafriser.organizer.ChangeSecurityActivity"
+               android:theme="@style/CustomDialogTheme"
+            android:label="Change Security Question"  >
+            
+        </activity>
+        
+         
+         <!-- Change Password -->
+         <activity 
+             android:name="info.leafriser.organizer.ChangePassword"
+             android:theme="@style/CustomDialogTheme"
+            android:label="Change Password"
+         >
+            </activity>
+            
+          <!-- Change Username -->
+         <activity 
+             android:name="info.leafriser.organizer.ChangeUsernameActivity"
+             android:theme="@style/CustomDialogTheme"
+            android:label="Change Username"
+         >
+            </activity>
+    </application>
+
+
+</manifest>
